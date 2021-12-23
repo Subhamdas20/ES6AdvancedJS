@@ -1,9 +1,14 @@
-let greet = (name = "Sir/Madam") => {
-    console.log(`Hello ${name}. Good morning and have a nice day `)
+function getLaptop(make, model, year) {
+    return {
+        make,
+        model,
+        year
+    }
 }
+console.log(getLaptop("Asus", "vivobook", "2015"))
 
-let literal = (firstName, lastName) => {
-    console.log(`Hello ${firstName} ${lastName} ..How are you ? `)
-}
-greet("subham")
-literal("Subham","Das")
+
+var o = { p: "login", q: true };
+var { p, q } = o
+console.log(p);
+console.log(q);
